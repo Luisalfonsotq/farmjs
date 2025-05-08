@@ -8,13 +8,18 @@
       <a href="/">Herdix</a>
     </v-app-bar-title>
     <LoginPage/>
+    <RegisterPage/>
   </v-app-bar>
 </template>
 <script>
 import LoginPage from '@/authentication/LoginPage.vue'
+import RegisterPage from '@/authentication/RegisterPage.vue'
   export default {
     name: 'NavBar',
-    components: {LoginPage},
+    components: {
+      LoginPage,
+      RegisterPage,
+    },
     props: {
       onToggleDrawer: {
         type: Function,

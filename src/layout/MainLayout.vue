@@ -24,7 +24,7 @@
         </v-sheet>
 
         <v-sheet>
-          <HomeView />
+          <AboutView/>
         </v-sheet>
       </v-container>
     </v-main>
@@ -40,6 +40,7 @@
 import HomeView from '@/views/HomeView.vue'
 import NavBarLayout from '@/layout/layoutComponents/NavBarLayout.vue'
 import FooterLayout from '@/layout/layoutComponents/FooterLayout.vue'
+import AboutView from '@/views/AboutView.vue'
 
 export default {
   name: 'MainLayout',
@@ -47,11 +48,12 @@ export default {
     NavBarLayout,
     FooterLayout,
     HomeView,
+    AboutView,
   },
   data: () => ({
     drawer: false,
-    isMobile: false,    
-  }), 
+    isMobile: false,
+  }),
   methods: {
     ToggleDrawer () {
       this.drawer = !this.drawer
