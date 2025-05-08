@@ -1,6 +1,6 @@
 <template>
-  <v-app>
-    <v-container class="container">
+  <v-app class="container">
+    <v-container >
 
       <div class="father">
 
@@ -28,8 +28,9 @@ export default {
 </script>
 <style lang="scss" scoped>
 .container {
+  margin: 0;
   position: relative;
-  background-image: url('../assets/fondoDorado.jpg');
+  background-image: url('../assets/interaccion.jpg');
   background-size: cover;
   background-position: center;
 }

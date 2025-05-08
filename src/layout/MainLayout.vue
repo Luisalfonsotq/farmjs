@@ -17,8 +17,12 @@
     </v-navigation-drawer>
 
     <!-- Main for children views -->
-    <v-main class="d-flex align-center justify-center">
+    <v-main>
       <v-container fluid>
+        <v-sheet>
+          <HomeView />
+        </v-sheet>
+
         <v-sheet>
           <HomeView />
         </v-sheet>
