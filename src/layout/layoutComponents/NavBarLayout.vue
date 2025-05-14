@@ -7,6 +7,7 @@
     <v-app-bar-title>
       <a href="/">Herdix</a>
     </v-app-bar-title>
+    <a href="#about">Nosotros</a>
     <LoginPage/>
     <RegisterPage/>
   </v-app-bar>

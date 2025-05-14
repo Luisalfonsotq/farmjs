@@ -9,7 +9,7 @@
 
     </div>
 
-    <div class="px-4 py-2 bg-surface-variant text-center w-100 rounded-lg">
+    <div class="px-4 py-2 section text-center w-100 rounded-lg">
       {{ new Date().getFullYear() }} — <strong>Vuetify</strong>
     </div>
   </v-footer>
@@ -29,3 +29,11 @@ export default {
 }
 
 </script>
+
+<style lang="scss" scoped>
+  .section {
+    background-color: $primary-color;
+    color: $white;
+  }
+
+</style>

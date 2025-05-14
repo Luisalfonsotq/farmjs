@@ -12,7 +12,7 @@
         </v-list-item>
       </v-list>
       <div class="d-flex justify-center align-center">
-        <v-btn variant="text">Get data</v-btn>
+        <GoogleMaps></GoogleMaps>
       </div>
     </v-navigation-drawer>
 
@@ -23,7 +23,7 @@
           <HomeView />
         </v-sheet>
 
-        <v-sheet>
+        <v-sheet id="about">
           <AboutView/>
         </v-sheet>
       </v-container>
@@ -41,6 +41,7 @@ import HomeView from '@/views/HomeView.vue'
 import NavBarLayout from '@/layout/layoutComponents/NavBarLayout.vue'
 import FooterLayout from '@/layout/layoutComponents/FooterLayout.vue'
 import AboutView from '@/views/AboutView.vue'
+import GoogleMaps from '@/layout/layoutComponents/GoogleMaps.vue'
 
 export default {
   name: 'MainLayout',
@@ -49,6 +50,7 @@ export default {
     FooterLayout,
     HomeView,
     AboutView,
+    GoogleMaps,
   },
   data: () => ({
     drawer: false,
