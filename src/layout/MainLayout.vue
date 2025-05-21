@@ -38,7 +38,6 @@ export default {
   components: {
     NavBarLayout,
     FooterLayout,
-
     GoogleMaps,
   },
   data: () => ({
