@@ -7,7 +7,7 @@
     <v-app-bar-title>
       <a href="/">Herdix</a>
     </v-app-bar-title>
-    <Router-link to="/about" class="pa-4">About Us</Router-link>
+    <Router-link to="/about" class="pa-4">Nosotros</Router-link>
     <LoginPage/>
     <RegisterPage/>
   </v-app-bar>

@@ -6,7 +6,7 @@
         <v-btn 
         variant=""
         color="white" 
-        text="Login" 
+        text="Iniciar Sesión" 
         :elevation="2" 
         v-bind="activatorProps" 
         rounded="xl"
@@ -27,7 +27,7 @@
           <img class="logo" src="@/assets/HERDIX.svg" alt="logo" width="25%" height="auto">
       </div>
         <v-card-text class="text-center">
-          ¡Welcome to Herdix! <br> Take your farm to the next level.
+          ¡Bienvenido a Herdix! <br> Lleva tu finca al próximo nivel.
         </v-card-text>
 
         <!-- Form -->
@@ -36,7 +36,7 @@
           <v-row dense justify="center">
             <v-col cols="12">
               <v-text-field 
-              label="Email*" 
+              label="Correo Electrónico*" 
               required 
               rounded="xl" 
               variant="outlined"
@@ -47,7 +47,7 @@
           <v-row dense justify="center">
             <v-col cols="12">
               <v-text-field 
-              label="Password*" 
+              label="Contraseña*" 
               type="password" 
               required 
               rounded="xl" 
@@ -58,7 +58,7 @@
           </v-row>
 
           <div class="text-caption text-medium-emphasis text-left">
-            *Indicates required field
+            *Indica que el campo es obligatorio
           </div>
 
           <!-- submit button -->
@@ -69,7 +69,7 @@
               rounded="xl" 
               class="text-none submit-btn" 
               color="white"
-            >Submit</v-btn>
+            >Iniciar Sesión</v-btn>
             </v-col>
           </v-row>
         </v-form>
@@ -85,7 +85,7 @@
           :elevation="2" 
           rounded="xl" 
           @click="dialog = false"
-        >Cancel</v-btn>
+        >Cancelar</v-btn>
         </v-card-actions>
       </v-card>
     </v-dialog>
@@ -103,7 +103,7 @@ export default {
 };
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 .button {
   background-color: $primary-color;
 }

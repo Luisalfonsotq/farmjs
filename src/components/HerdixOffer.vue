@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <div class="d-block pt-4 mb-4" align="center">
+    <div class="saludo mb-4 pt-6" align="center">
       <h2>¿Qué ofrece Herdix?</h2>
       <p>Herdix es una opción confiable para gestionar su finca ganadera, que ofrece una amplia gama de características para administrar fácilmente su negocio.</p>
     </div>
@@ -33,11 +33,24 @@ export default {
 };
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 .container {
+  display: flex;
+  flex-direction: column;
+  place-items: center;
   background-image: url('@/assets/fondo_prueba.jpg');
   background-size:cover;
   background-position: center;
+}
+
+.container .saludo {
+  display: block;
+  background-color: rgba(209, 227, 177, 0.4);
+  width: 60%;
+  border-radius: 2rem;
+  margin-top: 1rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 .cards-container {
@@ -45,5 +58,6 @@ export default {
   grid-template-rows: repeat(2, 1fr);
   grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
+  padding: 4rem;
 }
 </style>
