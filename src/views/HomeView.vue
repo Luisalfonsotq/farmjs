@@ -1,6 +1,5 @@
 <template>
   <v-app class="container">
-    <v-container >
 
       <div class="father">
 
@@ -13,9 +12,9 @@
             ¡Descubre la forma más fácil y eficiente de administrar tu finca con Herdix!
           </p>
         </div>
+
       </div>
 
-    </v-container>
   </v-app>
 </template>
 <script>
@@ -36,9 +35,12 @@ export default {
 }
 
 .container .father {
-  width: 350px;
+ position: absolute;
+  width: 450px;
   height: auto;
   background: transparent;
+  top: 10%;
+  left: 5%;
 }
 
 .container .father * {
@@ -52,18 +54,17 @@ export default {
 
 .container .father p {
   color: white;
-  font-family: $font-stack;
-  font-size: 1.2rem;
+  font-size: 2rem;
 }
 .container .father>div:first-child {
-  width: 350px !important;
+  width: 450px !important;
   height: auto;
 }
 
 .container .father>div:last-child {
   background-color: $primary-color;
-  border-bottom-left-radius: 180px;
-  border-bottom-right-radius: 180px;
-  padding: 1rem;
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+  padding: 1.2rem;
 }
 </style>
